@@ -24,6 +24,11 @@ namespace KalandparkJegykezelo
             return felnottJegy * 4000 + gyerekJegy * 2500;
         }
 
+        public override string ToString()
+        {
+            return $"{LatogatoNeve} - Felnőtt jegy: {felnottJegy}, Gyerek jegy: {gyerekJegy}, Fizetendő összeg: {FizetendoOsszeg()} Ft";
+        }
+
 
     }
 }
